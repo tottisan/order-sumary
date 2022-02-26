@@ -1,0 +1,182 @@
+:root {
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.4;
+}
+
+main {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 7px 15px 0px var(--desaturated-blue);
+}
+
+article > header {
+  background-image: url("../images/illustration-hero.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+section header {
+  margin-bottom: 1.5rem;
+}
+
+section header h1 {
+  color: var(--dark-blue);
+  margin: 0 0 1rem 0;
+}
+
+section header p {
+  color: var(--desaturated-blue);
+  margin: 0;
+}
+
+section .plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-pale-blue);
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+section .plan a {
+  color: var(--bright-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+section .plan_price {
+  margin: 0 4rem 0 1rem;
+  text-align: start;
+}
+
+.plan_price h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.plan_price p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--desaturated-blue);
+}
+
+section button {
+  display: block;
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 6px 15px 1px var(--desaturated-blue);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.9rem;
+  width: 100%;
+}
+
+section button:hover {
+  opacity: 0.8;
+}
+
+section > a {
+  color: var(--desaturated-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  main article {
+    max-width: 20rem;
+  }
+
+  article > header {
+    height: 10rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  section header h1 {
+    font-size: 1.2rem;
+  }
+
+  section header p {
+    font-size: 1rem;
+  }
+
+  .plan_price h2 {
+    font-size: 0.9rem;
+  }
+
+  .plan_price p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main article {
+    max-width: 23rem;
+  }
+
+  article > header {
+    height: 12rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  section header h1 {
+    font-size: 1.5rem;
+  }
+
+  section header p {
+    font-size: 1rem;
+  }
+
+  .plan_price h2 {
+    font-size: 1rem;
+  }
+
+  .plan_price p {
+    font-size: 0.9rem;
+  }
+}
